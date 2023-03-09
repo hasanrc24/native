@@ -11,7 +11,10 @@ const NavigationTab = () => {
   return (
     <>
       <Header />
-      <Tab.Navigator screenOptions={{}} initialRouteName="Home">
+      <Tab.Navigator
+        screenOptions={{ headerShown: false }}
+        initialRouteName="Home"
+      >
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="About" component={About} />
         <Tab.Screen name="Contact Us" component={Contact} />
